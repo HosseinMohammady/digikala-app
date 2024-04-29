@@ -7,7 +7,7 @@ import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStore
 const NavBar = () => {
   return (
     <>
-      <Stack>
+      <Stack sx={{ boxShadow: "0px 1px 0px 1px lightgray", pb: 3 }}>
         <Box
           component="img"
           src={topImage}

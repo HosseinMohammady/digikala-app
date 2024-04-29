@@ -1,5 +1,11 @@
+import Profiles from "./Profiles";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <Profiles />
+    </>
+  );
 };
 
 export default HomePage;

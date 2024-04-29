@@ -1,19 +1,19 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-interface ShoppingCarts {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  image: string;
+interface Profiles {
+  id: string;
+  name: string;
+  avatar: string;
 }
 
-const useShoppingCarts = () =>
-  useQuery<ShoppingCarts[], Error>({
-    queryKey: ["ShoppingCarts"],
+const useProfiles = () =>
+  useQuery<Profiles[], Error>({
+    queryKey: ["Profiles"],
     queryFn: () =>
-      axios.get("https://fakestoreapi.com/products").then((res) => res.data),
+      axios
+        .get("https://662fe82243b6a7dce31127f2.mockapi.io/profile/id/profiles")
+        .then((res) => res.data),
   });
 
-export default useShoppingCarts;
+export default useProfiles;

@@ -32,7 +32,7 @@ const Products = () => {
       sx={{
         bgcolor: "error.main",
         py: 2,
-        borderRadius: 3,
+        borderRadius: { xs: 0, lg: 3 },
         mt: 3,
       }}
     >

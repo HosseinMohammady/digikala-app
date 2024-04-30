@@ -17,14 +17,7 @@ import discount15 from "../images/dis15.webp";
 import discount16 from "../images/dis16.webp";
 import discount17 from "../images/dis17.webp";
 import discount18 from "../images/dis18.webp";
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 
 const discounts = [
   {

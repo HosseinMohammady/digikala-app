@@ -1,4 +1,5 @@
 import Advertisements from "./Advertisements";
+import Options from "./Options";
 import Profiles from "./Profiles";
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <Profiles />
       <Advertisements />
+      <Options />
     </>
   );
 };

@@ -116,6 +116,7 @@ const NavBar = () => {
                 pt: 1,
                 pb: 0.5,
                 borderTop: "2px solid lightgray",
+                zIndex: 1300,
               }}
             >
               <Stack alignItems="center">

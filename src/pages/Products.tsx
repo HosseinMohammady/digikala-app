@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 
 import { isDesktop, isMobile, isTablet } from "react-device-detect";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const { data, error, isLoading } = useProducts();
@@ -41,19 +42,24 @@ const Products = () => {
       >
         {data.map((product) => (
           <SwiperSlide key={product.id}>
-            <Stack
-              sx={{ px: 2, py: 4, alignItems: "center", cursor: "pointer" }}
-              style={{ backgroundColor: "#fff" }}
+            <Link
+              to={`/products/${product.id}`}
+              style={{ textDecoration: "none", color: "#222" }}
             >
-              <Box
-                component="img"
-                sx={{ width: 100, height: 100, mx: "auto" }}
-                src={product.image}
-              ></Box>
-              <Typography sx={{ mt: 3 }} component="h2">
-                {product.price} $
-              </Typography>
-            </Stack>
+              <Stack
+                sx={{ px: 2, py: 4, alignItems: "center", cursor: "pointer" }}
+                style={{ backgroundColor: "#fff" }}
+              >
+                <Box
+                  component="img"
+                  sx={{ width: 100, height: 100, mx: "auto" }}
+                  src={product.image}
+                ></Box>
+                <Typography sx={{ mt: 3 }} component="h2">
+                  {product.price} $
+                </Typography>
+              </Stack>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -66,7 +66,7 @@ const Profiles = () => {
       <Container sx={{ mt: 5 }}>
         <Swiper
           slidesPerView={
-            isDesktop ? 10 : isTablet ? 8.5 : isMobile ? 4 : "auto"
+            isDesktop ? 10.2 : isTablet ? 8.5 : isMobile ? 4.2 : "auto"
           }
           spaceBetween={isDesktop ? 30 : isTablet ? 25 : isMobile ? 20 : 1}
         >

@@ -65,7 +65,7 @@ const Options = () => {
               <Box component="img" src={option.image}></Box>
               <Box
                 sx={{
-                  fontSize: { xs: 10, sm: 10, lg: 12.5 },
+                  fontSize: { xs: 10, sm: 11, lg: 12.5 },
                   textWrap: "nowrap",
                   mx: "auto",
                   fontWeight: "bold",
@@ -92,7 +92,7 @@ const Options = () => {
               <Box component="img" src={option.image}></Box>
               <Box
                 sx={{
-                  fontSize: { xs: 10, sm: 10, lg: 12.5 },
+                  fontSize: { xs: 10, sm: 11, lg: 12.5 },
                   textWrap: "nowrap",
                   mx: "auto",
                   fontWeight: "bold",

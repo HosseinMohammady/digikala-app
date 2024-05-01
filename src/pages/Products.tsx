@@ -37,6 +37,7 @@ const Products = () => {
       }}
     >
       <Swiper
+        dir="rtl"
         slidesPerView={isTablet ? 5 : isMobile ? 2.5 : isDesktop ? 7 : 5}
         spaceBetween={3}
       >

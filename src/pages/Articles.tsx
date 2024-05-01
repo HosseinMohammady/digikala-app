@@ -41,6 +41,7 @@ const Articles = () => {
         >
           {articles.map((article, index) => (
             <Card
+              key={index}
               sx={{
                 width: { xs: "80%", lg: "24%" },
                 direction: "rtl",

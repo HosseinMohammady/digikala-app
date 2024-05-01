@@ -1,4 +1,5 @@
 import Advertisements from "./Advertisements";
+import Articles from "./Articles";
 import Discounts from "./Discounts";
 import ImagesSlides from "./ImageSlides";
 import Options from "./Options";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ImagesSlides />
       <SummerSale />
       <Discounts />
+      <Articles />
     </>
   );
 };

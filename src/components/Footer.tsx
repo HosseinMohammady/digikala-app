@@ -1,5 +1,8 @@
+import { isDesktop } from "react-device-detect";
+import FooterDesktop from "../FooterDesktop";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return <>{isDesktop ? <FooterDesktop /> : ""}</>;
 };
 
 export default Footer;

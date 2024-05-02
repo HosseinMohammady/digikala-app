@@ -1,5 +1,11 @@
+import BackToTopButton from "./BackToTopButton";
+
 const FooterDesktop = () => {
-  return <div>FooterDesktop</div>;
+  return (
+    <>
+      <BackToTopButton />
+    </>
+  );
 };
 
 export default FooterDesktop;

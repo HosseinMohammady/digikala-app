@@ -1,11 +1,5 @@
 import useProfiles from "../../hooks/useProfiles";
-import {
-  Box,
-  CircularProgress,
-  Container,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Skeleton, Stack, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -48,53 +42,46 @@ const Profiles = () => {
 
   const { data, error, isLoading } = useProfiles();
 
-  if (isLoading)
-    return (
-      <Stack
-        justifyContent="center"
-        alignItems="center"
-        sx={{ width: "100vw", height: "100vh" }}
-      >
-        <CircularProgress size={50} />
-      </Stack>
-    );
-
   if (error) return <p>{error.message}</p>;
 
   return (
     <>
       <Container sx={{ mt: 5 }}>
-        <Swiper
-          slidesPerView={
-            isDesktop ? 10.2 : isTablet ? 8.5 : isMobile ? 4.2 : "auto"
-          }
-          spaceBetween={isDesktop ? 30 : isTablet ? 25 : isMobile ? 20 : 1}
-        >
-          {data.map((profile) => (
-            <SwiperSlide key={profile.id}>
-              <Stack
-                gap={1}
-                alignItems="flex-start"
-                justifyContent="center"
-                sx={{ cursor: "pointer", textAlign: "center" }}
-              >
-                <Box
-                  component="img"
-                  src={profile.avatar}
-                  sx={{
-                    width: "100%",
-                    borderRadius: "50%",
-                    overflow: "hidden",
-                    objectFit: "cover",
-                    border: "3px solid purple",
-                    padding: "2px",
-                  }}
-                ></Box>
-                {separate({ wholeName: profile.name })}
-              </Stack>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {isLoading ? (
+          <Skeleton sx={{ height: "147px" }} animation="wave" />
+        ) : (
+          <Swiper
+            slidesPerView={
+              isDesktop ? 10.2 : isTablet ? 8.5 : isMobile ? 4.2 : "auto"
+            }
+            spaceBetween={isDesktop ? 30 : isTablet ? 25 : isMobile ? 20 : 1}
+          >
+            {data.map((profile) => (
+              <SwiperSlide key={profile.id}>
+                <Stack
+                  gap={1}
+                  alignItems="flex-start"
+                  justifyContent="center"
+                  sx={{ cursor: "pointer", textAlign: "center" }}
+                >
+                  <Box
+                    component="img"
+                    src={profile.avatar}
+                    sx={{
+                      width: "100%",
+                      borderRadius: "50%",
+                      overflow: "hidden",
+                      objectFit: "cover",
+                      border: "3px solid purple",
+                      padding: "2px",
+                    }}
+                  ></Box>
+                  {separate({ wholeName: profile.name })}
+                </Stack>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </Container>
     </>
   );

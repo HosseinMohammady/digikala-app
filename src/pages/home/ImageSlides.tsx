@@ -1,8 +1,8 @@
 import { Box, Stack, Container } from "@mui/material";
-import image1 from "../images/imgT1.webp";
-import image2 from "../images/imgT2.webp";
-import image3 from "../images/imgT3.webp";
-import image4 from "../images/imgT4.webp";
+import image1 from "../../images/imgT1.webp";
+import image2 from "../../images/imgT2.webp";
+import image3 from "../../images/imgT3.webp";
+import image4 from "../../images/imgT4.webp";
 
 const ImagesSlides = () => {
   return (

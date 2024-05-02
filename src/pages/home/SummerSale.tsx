@@ -1,6 +1,6 @@
 import { Box, Container, Stack } from "@mui/material";
-import summerProduct1 from "../images/tops1.webp";
-import summerProduct2 from "../images/tops2.webp";
+import summerProduct1 from "../../images/tops1.webp";
+import summerProduct2 from "../../images/tops2.webp";
 
 const SummerSale = () => {
   return (

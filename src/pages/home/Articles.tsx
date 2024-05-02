@@ -3,10 +3,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Container, Link, Stack } from "@mui/material";
-import article1 from "../images/read1.jpg";
-import article2 from "../images/read2.jpg";
-import article3 from "../images/read3.jpg";
-import article4 from "../images/read4.jpg";
+import article1 from "../../images/read1.jpg";
+import article2 from "../../images/read2.jpg";
+import article3 from "../../images/read3.jpg";
+import article4 from "../../images/read4.jpg";
 
 const articles = [
   {

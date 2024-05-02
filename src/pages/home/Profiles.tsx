@@ -1,4 +1,4 @@
-import useProfiles from "../hooks/useProfiles";
+import useProfiles from "../../hooks/useProfiles";
 import {
   Box,
   CircularProgress,

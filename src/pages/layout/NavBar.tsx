@@ -1,12 +1,13 @@
-import topImage from "../images/f90416804fecf5a5d408104ad8786ea41943877c_1714378302.gif";
+import topImage from "../../images/f90416804fecf5a5d408104ad8786ea41943877c_1714378302.gif";
 import { Box, IconButton, Stack, TextField, Typography } from "@mui/material";
 import { isDesktop } from "react-device-detect";
-import logo from "../images/logo.svg";
+import logo from "../../images/logo.svg";
 import LoginIcon from "@mui/icons-material/Login";
 import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import CategoryOutlinedIcon from "@mui/icons-material/CategoryOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+
 const NavBar = () => {
   return (
     <>

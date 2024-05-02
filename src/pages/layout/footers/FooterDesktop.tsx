@@ -16,7 +16,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import BackToTopButton from "./BackToTopButton";
-import digi from "./images/digii.svg";
+import digi from "../../../images/digii.svg";
 
 const CustomStack = styled(Stack)(() => ({
   width: "95%",
@@ -29,11 +29,14 @@ const ItemsStack = styled(Stack)(() => ({
 }));
 
 const footerItems = [
-  { image: "./public/footerImage1.svg", title: "اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس" },
-  { image: "./public/footerImage2.svg", title: "امکان پرداخت در محل" },
-  { image: "./public/footerImage3.svg", title: "۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ" },
-  { image: "./public/footerImage4.svg", title: "هفت روز ضمانت بازگشت کالا" },
-  { image: "./public/footerImage5.svg", title: "ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ" },
+  { image: "../../../public/footerImage1.svg", title: "اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس" },
+  { image: "../../../public/footerImage2.svg", title: "امکان پرداخت در محل" },
+  { image: "../../../public/footerImage3.svg", title: "۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ" },
+  {
+    image: "../../../public/footerImage4.svg",
+    title: "هفت روز ضمانت بازگشت کالا",
+  },
+  { image: "../../../public/footerImage5.svg", title: "ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ" },
 ];
 
 const footerList1 = [

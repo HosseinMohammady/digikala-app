@@ -1,4 +1,4 @@
-import useProducts from "../hooks/useProducts";
+import useProducts from "../../hooks/useProducts";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

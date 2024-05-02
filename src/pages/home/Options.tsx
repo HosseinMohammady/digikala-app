@@ -1,12 +1,12 @@
 import { Box, Container, Stack } from "@mui/material";
-import option1 from "../images/option1.png";
-import option2 from "../images/option2.png";
-import option3 from "../images/option3.png";
-import option4 from "../images/option4.png";
-import option5 from "../images/option5.png";
-import option6 from "../images/option6.png";
-import option7 from "../images/option7.png";
-import option8 from "../images/option8.png";
+import option1 from "../../images/option1.png";
+import option2 from "../../images/option2.png";
+import option3 from "../../images/option3.png";
+import option4 from "../../images/option4.png";
+import option5 from "../../images/option5.png";
+import option6 from "../../images/option6.png";
+import option7 from "../../images/option7.png";
+import option8 from "../../images/option8.png";
 
 const optionsPart1 = [
   {

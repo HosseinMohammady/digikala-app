@@ -24,9 +24,9 @@ const backToTopButton = () => {
     <Button
       variant="outlined"
       sx={{
-        color: "#999",
-        borderColor: "#999",
-        ":hover": { borderColor: "#777" },
+        color: { xs: "blue", lg: "#999" },
+        border: { xs: "none", lg: "1px solid #999" },
+        ":hover": { borderColor: { xs: "", lg: "#777" } },
       }}
       onClick={scrollUp}
     >

@@ -2,7 +2,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Container, Stack } from "@mui/material";
+import { CardActionArea, Container, Link, Stack } from "@mui/material";
 import article1 from "../images/read1.jpg";
 import article2 from "../images/read2.jpg";
 import article3 from "../images/read3.jpg";
@@ -32,7 +32,22 @@ const articles = [
 const Articles = () => {
   return (
     <>
-      <Container disableGutters sx={{ mt: 3, mb: { xs: 10, lg: 0 } }}>
+      <Container disableGutters sx={{ mt: 4, mb: { xs: 10, lg: 0 } }}>
+        <Stack
+          width={{ xs: "80%", lg: "100%" }}
+          mx="auto"
+          flexDirection="row-reverse"
+          justifyContent="space-between"
+          alignItems="center"
+          mb={1}
+        >
+          <Typography variant="h5" sx={{ fontSize: { xs: 18, lg: 22 } }}>
+            خواندنی‌ها
+          </Typography>
+          <Link href="#" sx={{ fontSize: { xs: 12, lg: 15 } }}>
+            &lt; مطالب بیشتر در دیجی‌کالا مگ
+          </Link>
+        </Stack>
         <Stack
           flexDirection={{ lg: "row-reverse" }}
           justifyContent={{ lg: "space-between" }}

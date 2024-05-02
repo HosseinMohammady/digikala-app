@@ -18,8 +18,12 @@ const ExpandableText = ({ children, maxChars = 100 }: Props) => {
     <Container sx={{ direction: "rtl", mt: 1 }}>
       <Typography variant="subtitle2" sx={{ fontWeight: 500 }}>
         {text}...
-        <Button variant="text" onClick={() => setExpanded(!isExpanded)}>
-          {isExpanded ? "بستن" : "مشاهده بیشتر"}
+        <Button
+          variant="text"
+          onClick={() => setExpanded(!isExpanded)}
+          sx={{ fontSize: 20 }}
+        >
+          {isExpanded ? "بستن >" : "مشاهده بیشتر >"}
         </Button>
       </Typography>
     </Container>

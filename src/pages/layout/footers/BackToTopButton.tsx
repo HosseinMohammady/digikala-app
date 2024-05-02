@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { useState, useEffect } from "react";
 
 const backToTopButton = () => {
-  const [backToTop, setBackToTop] = useState(false);
+  const [_backToTop, setBackToTop] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {

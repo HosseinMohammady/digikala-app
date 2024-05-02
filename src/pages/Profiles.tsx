@@ -12,21 +12,6 @@ import "swiper/css/pagination";
 import { isDesktop, isMobile, isTablet } from "react-device-detect";
 
 const Profiles = () => {
-  const { data, error, isLoading } = useProfiles();
-
-  if (isLoading)
-    return (
-      <Stack
-        justifyContent="center"
-        alignItems="center"
-        sx={{ width: "100vw", height: "100vh" }}
-      >
-        <CircularProgress size={50} />
-      </Stack>
-    );
-
-  if (error) return <p>{error.message}</p>;
-
   const separate = ({ wholeName }: { wholeName: string }) => {
     const [name, family] = wholeName.split(" ");
     return (
@@ -60,6 +45,21 @@ const Profiles = () => {
       </>
     );
   };
+
+  const { data, error, isLoading } = useProfiles();
+
+  if (isLoading)
+    return (
+      <Stack
+        justifyContent="center"
+        alignItems="center"
+        sx={{ width: "100vw", height: "100vh" }}
+      >
+        <CircularProgress size={50} />
+      </Stack>
+    );
+
+  if (error) return <p>{error.message}</p>;
 
   return (
     <>

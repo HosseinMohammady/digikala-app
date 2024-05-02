@@ -32,7 +32,7 @@ const articles = [
 const Articles = () => {
   return (
     <>
-      <Container disableGutters sx={{ mt: 4, mb: { xs: 10, lg: 0 } }}>
+      <Container disableGutters sx={{ mt: 4 }}>
         <Stack
           width={{ xs: "80%", lg: "100%" }}
           mx="auto"

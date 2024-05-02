@@ -4,9 +4,25 @@ import {
   AccordionSummary,
   Container,
   Stack,
+  styled,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import BackToTopButton from "./BackToTopButton";
+
+const CustomAccordion = styled(Accordion)(() => ({
+  direction: "rtl",
+  borderBottom: "1px solid lightgray",
+  boxShadow: "none",
+}));
+
+const footerList1 = [
+  "اتاق خبر دیجی‌کالا",
+  "فروش در دیجی‌کالا",
+  "فرصت‌های شغلی",
+  "گزارش تخلف در دیجی‌کالا",
+  "تماس با دیجی‌کالا",
+  "درباره دیجی‌کالا",
+];
 
 const FooterMobile = () => {
   return (

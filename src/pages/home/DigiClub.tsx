@@ -11,17 +11,17 @@ const GradientContainer = styled(Container)(() => ({
 
 const digiClubOptions = [
   {
-    image: "../../public/digiclub-1.webp",
+    image: "../../images/digiclub-1.webp",
     title: "چرخ و بخت",
     icon: <DonutLargeOutlinedIcon />,
   },
   {
-    image: "../../public/digiclub-2.webp",
+    image: "../../images/digiclub-2.webp",
     title: "ماموریت ها",
     icon: <CrisisAlertOutlinedIcon />,
   },
   {
-    image: "../../public/digiclub-3.webp",
+    image: "../../images/digiclub-3.webp",
     title: "جایزه ها",
     icon: <EmojiEventsOutlinedIcon />,
   },

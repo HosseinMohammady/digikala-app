@@ -29,14 +29,14 @@ const ItemsStack = styled(Stack)(() => ({
 }));
 
 const footerItems = [
-  { image: "../../../public/footerImage1.svg", title: "اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس" },
-  { image: "../../../public/footerImage2.svg", title: "امکان پرداخت در محل" },
-  { image: "../../../public/footerImage3.svg", title: "۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ" },
+  { image: "../../../images/footerImage1.svg", title: "اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس" },
+  { image: "../../../images/footerImage2.svg", title: "امکان پرداخت در محل" },
+  { image: "../../../images/footerImage3.svg", title: "۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ" },
   {
-    image: "../../../public/footerImage4.svg",
+    image: "../../../images/footerImage4.svg",
     title: "هفت روز ضمانت بازگشت کالا",
   },
-  { image: "../../../public/footerImage5.svg", title: "ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ" },
+  { image: "../../../images/footerImage5.svg", title: "ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ" },
 ];
 
 const footerList1 = [

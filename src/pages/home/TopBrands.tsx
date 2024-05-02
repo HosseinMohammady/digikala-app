@@ -4,29 +4,50 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { isDesktop, isMobile, isTablet } from "react-device-detect";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import brand1 from "../../images/brand1.png";
+import brand2 from "../../images/brand1.png";
+import brand3 from "../../images/brand1.png";
+import brand4 from "../../images/brand1.png";
+import brand5 from "../../images/brand1.png";
+import brand6 from "../../images/brand1.png";
+import brand7 from "../../images/brand1.png";
+import brand8 from "../../images/brand1.png";
+import brand9 from "../../images/brand1.png";
+import brand10 from "../../images/brand1.png";
+import brand11 from "../../images/brand1.png";
+import brand12 from "../../images/brand1.png";
+import brand13 from "../../images/brand1.png";
+import brand14 from "../../images/brand1.png";
+import brand15 from "../../images/brand1.png";
+import brand16 from "../../images/brand1.png";
+import brand17 from "../../images/brand1.png";
+import brand18 from "../../images/brand1.png";
+import brand19 from "../../images/brand1.png";
+import brand20 from "../../images/brand1.png";
+import brand21 from "../../images/brand1.png";
 
 const images = [
-  "../../images/brand1.png",
-  "../../images/brand2.png",
-  "../../images/brand3.png",
-  "../../images/brand4.png",
-  "../../images/brand5.png",
-  "../../images/brand6.png",
-  "../../images/brand7.jpg",
-  "../../images/brand8.jpg",
-  "../../images/brand9.png",
-  "../../images/brand10.png",
-  "../../images/brand11.jpg",
-  "../../images/brand12.png",
-  "../../images/brand13.png",
-  "../../images/brand14.png",
-  "../../images/brand15.jpg",
-  "../../images/brand16.jpg",
-  "../../images/brand17.png",
-  "../../images/brand18.png",
-  "../../images/brand19.jpg",
-  "../../images/brand20.png",
-  "../../images/brand21.jpg",
+  brand1,
+  brand2,
+  brand3,
+  brand4,
+  brand5,
+  brand6,
+  brand7,
+  brand8,
+  brand9,
+  brand10,
+  brand11,
+  brand12,
+  brand13,
+  brand14,
+  brand15,
+  brand16,
+  brand17,
+  brand18,
+  brand19,
+  brand20,
+  brand21,
 ];
 
 const TopBrands = () => {

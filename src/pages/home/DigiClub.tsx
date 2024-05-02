@@ -3,6 +3,9 @@ import DonutLargeOutlinedIcon from "@mui/icons-material/DonutLargeOutlined";
 import CrisisAlertOutlinedIcon from "@mui/icons-material/CrisisAlertOutlined";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
 import digiclub from "../../images/digiclub.svg";
+import digiclub1 from "../../images/digiclub-1.webp";
+import digiclub2 from "../../images/digiclub-2.webp";
+import digiclub3 from "../../images/digiclub-3.webp";
 
 const GradientContainer = styled(Container)(() => ({
   background: "linear-gradient(to right, #2979ff, #007bb2)",
@@ -11,17 +14,17 @@ const GradientContainer = styled(Container)(() => ({
 
 const digiClubOptions = [
   {
-    image: "../../images/digiclub-1.webp",
+    image: digiclub1,
     title: "چرخ و بخت",
     icon: <DonutLargeOutlinedIcon />,
   },
   {
-    image: "../../images/digiclub-2.webp",
+    image: digiclub2,
     title: "ماموریت ها",
     icon: <CrisisAlertOutlinedIcon />,
   },
   {
-    image: "../../images/digiclub-3.webp",
+    image: digiclub3,
     title: "جایزه ها",
     icon: <EmojiEventsOutlinedIcon />,
   },

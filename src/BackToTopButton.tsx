@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { useState, useEffect } from "react";
 
 const backToTopButton = () => {
@@ -20,15 +21,17 @@ const backToTopButton = () => {
   };
 
   return (
-    <div>
-      <button
-        className="rounded-lg text-gray-500 font-lg p-2"
-        style={{ border: "1px solid #999" }}
-        onClick={scrollUp}
-      >
-        بازگشت به بالا ^
-      </button>
-    </div>
+    <Button
+      variant="outlined"
+      sx={{
+        color: "#999",
+        borderColor: "#999",
+        ":hover": { borderColor: "#777" },
+      }}
+      onClick={scrollUp}
+    >
+      بازگشت به بالا ^
+    </Button>
   );
 };
 

@@ -1,5 +1,6 @@
 import Advertisements from "./Advertisements";
 import Articles from "./Articles";
+import DigiClub from "./DigiClub";
 import Discounts from "./Discounts";
 import ImagesSlides from "./ImageSlides";
 import Options from "./Options";
@@ -18,6 +19,7 @@ const HomePage = () => {
       <ImagesSlides />
       <SummerSale />
       <TopBrands />
+      <DigiClub />
       <Discounts />
       <Articles />
     </>
